@@ -1,16 +1,51 @@
-# React + Vite
+# 👨‍💻 Portfólio Pessoal | Luiz Felipe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview do Portfólio]()
 
-Currently, two official plugins are available:
+Um portfólio moderno, responsivo e de alta performance construído para apresentar minha trajetória na Engenharia de Controle e Automação e no Desenvolvimento Web. O design segue uma estética "Dark Premium", utilizando fundos escuros absolutos com efeitos de brilho (glow) em roxo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design Responsivo:** Adaptado para funcionar perfeitamente em dispositivos móveis, tablets e desktops.
+- **Tema Dark Premium:** Interface elegante com uso avançado de Tailwind CSS (gradientes, glassmorphism e animações suaves).
+- **Single Page Application (SPA):** Navegação fluida entre seções sem recarregamento da página.
+- **Seção de Projetos Dinâmica:** Cards interativos para exibir projetos como *IFPA Academics*.
+- **Formulário de Contato:** Simulação de envio com feedback visual em tempo real (Toast Notifications).
+- **Dados Centralizados:** Uso de constantes (`utils/constants.js`) para fácil manutenção de links e conteúdos.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tecnologias Utilizadas
+
+Este projeto foi construído com as seguintes tecnologias:
+
+- **[React](https://reactjs.org/)** - Biblioteca JavaScript para construção de interfaces de usuário.
+- **[Vite](https://vitejs.dev/)** - Ferramenta de build extremamente rápida para projetos web modernos.
+- **[Tailwind CSS (v4)](https://tailwindcss.com/)** - Framework CSS Utility-first para estilização rápida e customizável.
+- **[FontAwesome](https://fontawesome.com/)** - Biblioteca de ícones.
+
+---
+
+## 📁 Estrutura do Projeto
+
+A arquitetura foi pensada para ser escalável e de fácil manutenção:
+
+```text
+src/
+├── assets/          # Imagens, SVGs e arquivos estáticos
+├── components/      # Componentes React reutilizáveis
+│   ├── ui/          # Componentes de interface base (Button, Card)
+│   ├── About.jsx    # Seção Sobre Mim
+│   ├── Contact.jsx  # Formulário de Contato
+│   ├── Hero.jsx     # Seção principal/Apresentação
+│   ├── Navbar.jsx   # Barra de navegação responsiva
+│   ├── Projects.jsx # Vitrine de projetos
+│   └── Skills.jsx   # Grade de habilidades
+├── styles/          # Estilos globais e configurações do Tailwind
+│   └── index.css
+├── utils/           # Funções utilitárias e dados constantes
+│   └── constants.js # Central de links e dados dos projetos
+├── App.jsx          # Componente raiz que une as seções
+└── main.jsx         # Ponto de entrada da aplicação
