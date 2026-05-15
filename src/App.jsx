@@ -7,6 +7,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './styles/index.css';
 
+import {LINKS} from '../src/utils/constants'
+
 function App() {
   return (
       <div className="bg-black text-gray-100 antialiased font-sans flex flex-col min-h-screen relative overflow-x-hidden">
@@ -33,8 +35,10 @@ function App() {
             &copy; {new Date().getFullYear()} Luiz Felipe. Todos os direitos reservados.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="text-gray-500 hover:text-purple-400 transition-colors"><i className="fa-brands fa-github"></i></a>
-            <a href="#" className="text-gray-500 hover:text-purple-400 transition-colors"><i className="fa-brands fa-linkedin"></i></a>
+            {/* github */}
+            <a href={LINKS.github} className="text-gray-500 hover:text-purple-400 transition-colors"><i className="fa-brands fa-github"></i></a> 
+            {/* linkedin */}
+            <a href={LINKS.linkedin} className="text-gray-500 hover:text-purple-400 transition-colors"><i className="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
       </footer>

@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#inicio" className="text-2xl font-bold text-white flex items-center gap-2 group">
           <span className="text-brand-light group-hover:animate-pulse"><i className="fa-solid fa-code"></i></span>
-          LF<span className="text-brand-light">Portfólio</span>
+          <span className="text-white">Portfólio</span>
         </a>
         
         {/* Menu Desktop */}

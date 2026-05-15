@@ -9,7 +9,6 @@ const About = () => {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 border-4 border-brand-DEFAULT rounded-2xl transform translate-x-4 translate-y-4"></div>
-              {/* Fechamento da tag img com /> */}
               <img src="https://placehold.co/400x400/1a1a24/a855f7?text=Sua+Foto" alt="Minha Foto" className="relative z-10 rounded-2xl object-cover w-full h-full shadow-lg" />
             </div>
           </div>

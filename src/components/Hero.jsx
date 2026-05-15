@@ -1,4 +1,5 @@
 import React from 'react';
+import { LINKS } from '../utils/constants';
 
 const Hero = () => {
   return (
@@ -23,8 +24,8 @@ const Hero = () => {
         </div>
         
         <div className="mt-12 flex justify-center gap-6">
-          <a href="https://github.com/LuizxxDev" className="text-gray-400 hover:text-brand-light text-2xl transition-colors"><i className="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/luiz-felipe-batista-rodrigues-925469254/" className="text-gray-400 hover:text-brand-light text-2xl transition-colors"><i className="fa-brands fa-linkedin"></i></a>
+          <a href={LINKS.github} className="text-gray-400 hover:text-brand-light text-2xl transition-colors"><i className="fa-brands fa-github"></i></a>
+          <a href={LINKS.linkedin} className="text-gray-400 hover:text-brand-light text-2xl transition-colors"><i className="fa-brands fa-linkedin"></i></a>
         </div>
 
       </div>

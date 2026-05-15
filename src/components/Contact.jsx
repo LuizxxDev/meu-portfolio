@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 
+import { LINKS } from '../utils/constants';
+
 const Contact = () => {
-  const [status, setStatus] = useState('idle'); // Estados: idle, sending, success
+  const [status, setStatus] = useState('idle'); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('sending');
     
-    // Simulando o tempo de envio de um e-mail
+  
     setTimeout(() => {
       setStatus('success');
-      e.target.reset(); // Limpa o formulário
-      
-      // Tira a notificação da tela após 3 segundos
+      e.target.reset();
+    
       setTimeout(() => setStatus('idle'), 3000);
     }, 1500);
   };
@@ -26,7 +27,6 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-neutral-900 border border-neutral-800 rounded-2xl p-8 shadow-2xl">
           
-          {/* Coluna da Esquerda: Informações */}
           <div>
             <h3 className="text-2xl font-semibold mb-6">Informações de Contato</h3>
             <p className="text-gray-400 mb-8">Sinta-se à vontade para entrar em contato comigo para oportunidades de trabalho, colaborações ou apenas para trocar uma ideia!</p>
@@ -47,13 +47,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-medium">Email</h4>
-                  <p className="text-gray-400 text-sm">luizfelipe.ifpa.2022@gmail.com</p>
+                  <p className="text-gray-400 text-sm">{LINKS.email}</p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Coluna da Direita: Formulário */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-1">Seu Nome</label>
