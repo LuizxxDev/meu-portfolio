@@ -1,6 +1,6 @@
 # 👨‍💻 Portfólio Pessoal | Luiz Felipe
 
-![Preview do Portfólio]()
+![Preview do Portfólio](../portfolio/src/assets/portfoliopreview.png)
 
 Um portfólio moderno, responsivo e de alta performance construído para apresentar minha trajetória na Engenharia de Controle e Automação e no Desenvolvimento Web. O design segue uma estética "Dark Premium", utilizando fundos escuros absolutos com efeitos de brilho (glow) em roxo.
 
